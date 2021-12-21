@@ -3,13 +3,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import java.io.*;
-import java.text.NumberFormat;
-import java.text.ParseException;
-import java.util.*;
 
 public class DINCalculator extends Application {
 

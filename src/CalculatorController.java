@@ -11,7 +11,7 @@ import java.util.*;
 
 public class CalculatorController implements Initializable {
 
-    private static final String INPUT_FILE_NAME = "dinChart.csv";
+    private static final String INPUT_FILE_NAME = "dinChart.txt";
     private static final int HEIGHT_EQUALIZER = 7;
     private double[][] dinChart;
     @FXML
@@ -86,10 +86,10 @@ public class CalculatorController implements Initializable {
     private static double[][] createDinChart() {
 
         double[][] dinChart;
-        int rows = 0;
-        int cols = 0;
+        int rows;
+        int cols;
 
-        try (Scanner sc = new Scanner(new File("dinChart.txt"))) {
+        try (Scanner sc = new Scanner(new File(INPUT_FILE_NAME))) {
             List<String[]> list = new ArrayList<>();
 
             while(sc.hasNextLine()) {
@@ -168,7 +168,7 @@ public class CalculatorController implements Initializable {
             finalNumber = weightNumber;
         }
 
-        if (ageNumber == 0 || ageNumber == 2) {
+        if ((ageNumber == 0 || ageNumber == 2) && finalNumber != 0) {
             --finalNumber;
         }
 
