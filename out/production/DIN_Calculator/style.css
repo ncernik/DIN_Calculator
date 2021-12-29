@@ -1,3 +1,23 @@
-.header {
+.vbox .header {
 -fx-font-weight: bold;
+-fx-font-size: 24pt;
+}
+.vbox {
+-fx-alignment: center;
+-fx-pref-height: 600px;
+-fx-pref-width: 450px;
+-fx-background-image: url("./assets/background2.jpg");
+-fx-background-size: cover;
+-fx-background-position: bottom;
+}
+
+.container {
+-fx-alignment: center;
+-fx-padding: 15px;
+-fx-font-size: 14px;
+}
+
+.subheading {
+-fx-font-size: 18px;
+-fx-text-fill: #FFF;
 }
